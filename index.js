@@ -1,7 +1,6 @@
 Vue.createApp({
   data() {
     return {
-      message: "Hello world",
       currentViewId: "home",
       guestName: undefined,
       views: [
@@ -29,8 +28,6 @@ Vue.createApp({
   },
   methods: {
     move(to) {
-      // document.getElementById(this.currentViewId).style.display = "none";
-      // document.getElementById(to).style.display = "block";
       this.currentViewId = to;
     }
   }
